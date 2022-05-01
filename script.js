@@ -18,7 +18,9 @@ function compute() {
     prncpl.innerHTML = principal;
     intrst.innerHTML = interest;
 
-    amount = parseInt(principal) * parseFloat(interest) * parseInt(no_of_years);
+    amount =
+      ((parseInt(principal) * parseFloat(interest)) / 100) *
+      parseInt(no_of_years);
 
     total_amount.innerHTML = amount;
   }
