@@ -56,3 +56,12 @@ p span {
   padding: 4px;
   border-radius: 2px;
 }
+
+button {
+  background-color: blue;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 10px;
+}

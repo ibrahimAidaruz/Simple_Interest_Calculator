@@ -10,12 +10,18 @@ function compute() {
   interest = rangeslider.value;
   no_of_years = document.getElementById("years").value;
 
-  prncpl.innerHTML = principal;
-  intrst.innerHTML = interest;
+  if (principal == "" || no_of_years == "") {
+    alert("Please enter number");
+  } else if (parseInt(principal) < 0 || parseInt(no_of_years) < 0) {
+    alert("alert Positive Number");
+  } else {
+    prncpl.innerHTML = principal;
+    intrst.innerHTML = interest;
 
-  amount = parseInt(principal) * parseFloat(interest) * parseInt(no_of_years);
+    amount = parseInt(principal) * parseFloat(interest) * parseInt(no_of_years);
 
-  total_amount.innerHTML = amount;
+    total_amount.innerHTML = amount;
+  }
 }
 
 form.addEventListener("submit", (e) => {
