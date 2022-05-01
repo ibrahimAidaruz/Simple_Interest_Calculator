@@ -13,7 +13,7 @@ function compute() {
   if (principal == "" || no_of_years == "") {
     alert("Please enter number");
   } else if (parseInt(principal) <= 0 || parseInt(no_of_years) <= 0) {
-    alert("alert Positive Number");
+    alert("Please Enter Positive Number");
   } else {
     prncpl.innerHTML = principal;
     intrst.innerHTML = interest;
