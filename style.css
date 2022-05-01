@@ -1,4 +1,58 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+  background-color: black;
+  /* color: white; */
+  /* margin: 0; */
+  padding: 0;
+}
+.container {
+  width: 500px;
+  background: white;
+  margin: auto;
+  border-radius: 25px;
+  padding: 1em;
+}
+form {
+  padding: 0 2rem;
+}
+form div {
+  margin-bottom: 12px;
+}
+h1 {
+  color: grey;
+  /* font-family: "Courier New", Courier, monospace; */
+}
+label,
+input {
+  display: inline-block;
+}
 
+label {
+  width: 100px;
+}
 
+/* input {
+  padding: 3px;
+} */
+
+input[type="number"] {
+  width: 40px;
+}
+input[type="range"] {
+  height: 30px;
+}
+
+.rateDiv {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.output {
+  margin-left: 5px;
+}
+
+p span {
+  display: inline-block;
+  background-color: yellow;
+  padding: 4px;
+  border-radius: 2px;
+}

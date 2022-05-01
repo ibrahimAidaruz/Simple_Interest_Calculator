@@ -1,16 +1,43 @@
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+      <form action="">
+        <div>
+          <label for="principal">Amount</label>
+          <input type="text" id="principal" />
+        </div>
+        <div class="rateDiv">
+          <label for="rate">Rate</label>
+          <input
+            type="range"
+            min="0.5"
+            max="100"
+            value=""
+            class="rate"
+            id="rate"
+          />
+          <span class="output"></span>
+        </div>
+        <div>
+          <label for="rate">No. of Years</label
+          ><input type="number" id="years" />
+        </div>
+        <button type="submit">Compute Interest</button>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+        <h4>Output:</h4>
+        <p>
+          If You deposit: <span class="principal">0</span><br />
+          at interset rate Of: <span class="interest">0</span><br />
+          You will recieve an amout of: <span class="amount">0</span><br />
+        </p>
+      </form>
+      <div>&copy;Everyone Can Get Rich</div>
+    </div>
+  </body>
 </html>
