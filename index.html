@@ -13,6 +13,7 @@
           <label for="principal">Amount</label>
           <input type="text" id="principal" />
         </div>
+        <div class="principal_error error"></div>
         <div class="rateDiv">
           <label for="rate">Rate</label>
           <input
@@ -25,19 +26,18 @@
           />
           <span class="output"></span>
         </div>
+        <!-- <div class="rate_error error"></div> -->
         <div>
-          <label for="rate">No. of Years</label
+          <label for="years">No. of Years</label
           ><input type="number" id="years" />
         </div>
+        <div class="years_error error"></div>
         <button type="submit">Compute Interest</button>
-
-        <h4>Output:</h4>
-        <p>
-          If You deposit: <span class="principal">0</span><br />
-          at interset rate Of: <span class="interest">0</span><br />
-          You will recieve an amout of: <span class="amount">0</span><br />
-        </p>
       </form>
+      <section>
+        <h4>Output:</h4>
+        <div class="section"></div>
+      </section>
       <div>&copy;Everyone Can Get Rich</div>
     </div>
   </body>
